@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _LoginPageState createState() => _LoginPageState();
 }
 
@@ -16,12 +19,12 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               width: 200,
               height: 200,
-              child: Image.asset('assets/images/logo1.png'),
+              child: Image.asset('assets/images/logo.png'),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -37,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                         border: OutlineInputBorder(),
                       ),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     TextField(
                       onChanged: (text) {
                         password = text;
@@ -48,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                         border: OutlineInputBorder(),
                       ),
                     ),
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     ElevatedButton(
                       onPressed: () {
                         if (email == 'suporte2@visualset.com.br' &&
@@ -62,9 +65,9 @@ class _LoginPageState extends State<LoginPage> {
                         foregroundColor: Colors.white,
                         backgroundColor: Colors.red,
                       ),
-                      child: Container(
+                      child: const SizedBox(
                         width: double.infinity,
-                        child: const Text(
+                        child: Text(
                           'Entrar',
                           textAlign: TextAlign.center,
                         ),

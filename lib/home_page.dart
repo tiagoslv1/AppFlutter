@@ -17,6 +17,7 @@ class HomePageState extends State<HomePage> {
       drawer: Drawer(
         child: Column(
           children: [
+            const SizedBox(height: 20),
             const CircleAvatar(
                     backgroundImage: NetworkImage(
                       'https://th.bing.com/th/id/OIP.hpJkZoIhk0SO08T6H5-HbAAAAA?rs=1&pid=ImgDetMain'
@@ -30,7 +31,7 @@ class HomePageState extends State<HomePage> {
                       Text(
                         'Tiago Silva',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.red,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
@@ -38,7 +39,7 @@ class HomePageState extends State<HomePage> {
                       Text(
                         'suporte2@visualset.com.br',
                         style: TextStyle(
-                          color: Colors.white70,
+                          color: Color.fromARGB(78, 30, 27, 27),
                           fontSize: 16,
                         ),
                       ),
