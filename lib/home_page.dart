@@ -39,16 +39,28 @@ class HomePageState extends State<HomePage> {
                       Text(
                         'suporte2@visualset.com.br',
                         style: TextStyle(
-                          color: Color.fromARGB(78, 30, 27, 27),
+                          color: Colors.black,
                           fontSize: 16,
                         ),
                       ),
                     ],
                   ),
             ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Logout'),
-              subtitle: const Text('Finalizar sessão'),
+              leading: Center (child: Icon(Icons.home)),
+              title: Center (child:  Text('Login')),
+              subtitle: Center (child:  Text('Iniciar Sessão')),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+            ),
+
+            SizedBox(height: 400), // Espaço de 400 pixels
+
+            ListTile(
+              
+              leading: const Icon(Icons.logout),
+              title: Text('Logout'),
+              subtitle: Text('Finalizar sessão'),
               onTap: () {
                 Navigator.of(context).pushReplacementNamed('/');
               },
